@@ -10,7 +10,14 @@ def my_sort(lst):
     not use Python's built in sorted method or [].sort(). You may use
     any sorting algorithm of your choice.
     '''
-    pass
+    sorted = list()
+    small = min(lst)
+    for x in range len(lst):
+        if lst[x] < small:
+            small = lst[x]
+            sorted.append(min(lst))
+        print(sorted)
+    return sorted
 
 def sort_dict(d):
     ''' Sort a dictionary by value. The function should return
@@ -120,3 +127,5 @@ class Node(object):
     Important data attributes: value (or element), left and right.
     '''
     pass
+
+
